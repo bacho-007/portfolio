@@ -1,104 +1,75 @@
 :root {
-  --title-color:hsl(var(--hue), var(--sat), 20%);
-  --title-color-dark:hsl(var(--hue), var(--sat), 0%);
-  --text-color:hsl(var(--hue), var(--sat), 46%);
-  --body-color:hsl(var(--hue), var(--sat), 98%);
-  --container-color:#fff;
-  
-  --body-font:"Poppins",sans-serif; 
+  --clr: #222327;
+  --title-color: hsl(var(--hue), var(--sat), 20%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+  --text-color: hsl(var(--hue), var(--sat), 46%);
+  --body-color: hsl(var(--hue), var(--sat), 98%);
+  --container-color: #fff;
+
+  --body-font: "Poppins", sans-serif;
 
   /* font size */
-  --big-font-size:3.5rem;
-  --h1-font-size:2.25rem;
-  --h2-font-size:1.5rem;
-  --h3-font-size:1.25rem;
-  --normal-font-size:1rem;
-  --small-font-size:0.875rem;
-  --smaller-font-size:0.813rem;
-  --tiny-font-size:0.625rem;
+  --big-font-size: 3.5rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+  --tiny-font-size: 0.625rem;
 
   /* font weight */
-  --font-normal:400;
-  --font-medium:500;
-  --font-semi-bold:600;
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
 }
 
-/* google fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-
 a {
   text-decoration: none;
-  color: inherit;
-}
-a:hover {
-  color: #535bf2;
 }
 
-body,
-button,
-textarea {
-  font-family: var(--body-font);
-  font-size: var(--small-font-size);
-}
-
-body{
+/* body {
   background-color: var(--body-color);
   color: var(--text-color);
-}
+} */
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-a{
+a {
   text-decoration: none;
 }
-
 
 button {
   border: none;
   outline: none;
   cursor: pointer;
 }
-
-img{
+*/ img {
   max-width: 100%;
   height: auto;
 }
-.container{
+.container {
   max-width: 1280px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
