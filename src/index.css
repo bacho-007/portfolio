@@ -38,10 +38,9 @@ a {
   text-decoration: none;
 }
 
-/* body {
-  background-color: var(--body-color);
-  color: var(--text-color);
-} */
+body {
+  background-color: rgb(245, 245, 245);
+}
 
 h1,
 h2,

@@ -1,17 +1,18 @@
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: rgb(118, 118, 116);
+.man__header__nav {
+  position: fixed;
+  left: 50%;
+  width: max-content;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  z-index: 2;
 }
 
 .mini__navigation {
   position: relative;
-  width: 375px;
+  width: 370px;
   height: 70px;
   background: #ffff;
   display: flex;
@@ -81,7 +82,7 @@ body {
   height: 65px;
   background: #29fd53;
   border-radius: 50%;
-  border: 6px solid rgb(118, 118, 116);
+  border: 6px solid  rgb(245, 245, 245);
   transition: 0.5s;
 }
 
@@ -91,22 +92,22 @@ body {
   top: 50%;
   left: -21px;
   width: 18px;
-  height: 22px;
+  height: 21px;
   background: transparent;
   border-top-right-radius: 20px;
-  box-shadow: 1px -10px 0 0 rgb(118, 118, 116);
+  box-shadow: 1px -10px 0 0  rgb(245, 245, 245);
 }
 
 .indicator::after {
   content: "";
   position: absolute;
   top: 50%;
-  right: -22px;
-  width: 20px;
-  height: 20px;
+  right: -21px;
+  width: 18px;
+  height: 21px;
   background: transparent;
   border-top-left-radius: 20px;
-  box-shadow: -1px -10px 0 0 rgb(118, 118, 116);
+  box-shadow: -1px -10px 0 0  rgb(245, 245, 245);
 }
 
 .mini__navigation ul li:nth-child(1).active ~ .indicator {
@@ -128,3 +129,6 @@ body {
 .mini__navigation ul li:nth-child(5).active ~ .indicator {
   transform: translateX(calc(70px * 4));
 };
+
+
+
