@@ -1,5 +1,4 @@
 /* google fonts */
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 body {
@@ -128,4 +127,94 @@ body {
 
 .mini__navigation ul li:nth-child(5).active ~ .indicator {
   transform: translateX(calc(70px * 4));
+}
+
+/* Media Query for 500px screen width or smaller */
+@media (max-width: 500px) {
+  .mini__navigation {
+    width: 300px;
+    height: 50px;
+  }
+
+  .mini__navigation ul li {
+    width: 50px;
+    height: 50px;
+  }
+
+  .mini__navigation ul li a .icon {
+    font-size: 1.2em;
+  }
+
+  .mini__navigation ul li.active a .icon {
+    transform: translateY(-22px);
+  }
+
+  .mini__navigation ul li a .text {
+    font-size: 0.65em;
+    transform: translateY(14px);
+  }
+
+  .mini__navigation ul li.active a .text {
+    transform: translateY(7px);
+  }
+
+  .indicator {
+    top: -35px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .indicator::before,
+  .indicator::after {
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    border-top-right-radius: 12px;
+    box-shadow: 1px -6px 0 0 var(--clr);
+  }
+}
+
+/* Media Query for 400px screen width or smaller */
+@media (max-width: 400px) {
+  .mini__navigation {
+    width: 240px; /* Adjusted width for 400px screen */
+    height: 40px; /* Adjusted height for 400px screen */
+  }
+
+  .mini__navigation ul li {
+    width: 40px; /* Adjusted width for 400px screen */
+    height: 40px; /* Adjusted height for 400px screen */
+  }
+
+  .mini__navigation ul li a .icon {
+    font-size: 1em; /* Adjusted font size for 400px screen */
+  }
+
+  .mini__navigation ul li.active a .icon {
+    transform: translateY(-18px); /* Adjusted value for 400px screen */
+  }
+
+  .mini__navigation ul li a .text {
+    font-size: 0.55em; /* Adjusted font size for 400px screen */
+    transform: translateY(12px); /* Adjusted value for 400px screen */
+  }
+
+  .mini__navigation ul li.active a .text {
+    transform: translateY(6px); /* Adjusted value for 400px screen */
+  }
+
+  .indicator {
+    top: -28px; /* Adjusted value for 400px screen */
+    width: 40px; /* Adjusted width for 400px screen */
+    height: 40px; /* Adjusted height for 400px screen */
+  }
+
+  .indicator::before,
+  .indicator::after {
+    width: 10px; /* Adjusted width for 400px screen */
+    height: 10px; /* Adjusted height for 400px screen */
+    top: 50%; /* Adjusted value for 400px screen */
+    border-top-right-radius: 10px; /* Adjusted value for 400px screen */
+    box-shadow: 0 0 0 0 var(--clr); /* Adjusted value for 400px screen */
+  }
 }
