@@ -6,29 +6,29 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: var(--body-color);
+  background: rgb(118, 118, 116);
 }
 
 .mini__navigation {
   position: relative;
-  width: 380px;
+  width: 375px;
   height: 70px;
   background: #ffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  border: 2px solid black;
+  border-radius: 50px;
+  
 }
 
 .mini__navigation ul {
   display: flex;
-  width: 350px;
+  width: 347px;
 }
 
 .mini__navigation ul li {
   position: relative;
-  width: 70px;
+  width: 69px;
   height: 70px;
   z-index: 1;
 }
@@ -76,13 +76,13 @@ body {
 
 .indicator {
   position: absolute;
-  top: -50%;
-  width: 70px;
-  height: 70px;
+  top: -46%;
+  width: 64px;
+  height: 65px;
   background: #29fd53;
   border-radius: 50%;
-  border: 6px solid var(--clr);
-  transform: 0.5s;
+  border: 6px solid rgb(118, 118, 116);
+  transition: 0.5s;
 }
 
 .indicator::before {
@@ -94,7 +94,7 @@ body {
   height: 22px;
   background: transparent;
   border-top-right-radius: 20px;
-  box-shadow: 1px -10px 0 0 var(--clr);
+  box-shadow: 1px -10px 0 0 rgb(118, 118, 116);
 }
 
 .indicator::after {
@@ -106,7 +106,7 @@ body {
   height: 20px;
   background: transparent;
   border-top-left-radius: 20px;
-  box-shadow: -1px -10px 0 0 var(--clr);
+  box-shadow: -1px -10px 0 0 rgb(118, 118, 116);
 }
 
 .mini__navigation ul li:nth-child(1).active ~ .indicator {
