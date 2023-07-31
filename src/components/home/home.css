@@ -1,11 +1,12 @@
-.home__content{
- display: flex;
- flex-direction: column;
- flex-wrap: nowrap;
- align-items: center;
- 
+.home__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+
 }
-.home__social{
+
+.home__social {
     display: grid;
     grid-template-columns: max-content;
     position: absolute;
@@ -14,55 +15,42 @@
     padding-left: 1rem;
     cursor: pointer;
 }
-.home__section{
+
+.home__section {
     padding-top: 6rem;
-    
+
 }
-.helo{
+
+.helo {
     padding-bottom: 0.8rem;
 }
 
-.home__subtitle{
+.home__subtitle {
     padding-bottom: 1rem;
 }
-.home__img{
+
+.home__img {
     background: url(../../assets/about.jpg);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    box-shadow: inset 0 0 0 9px  rgb(255 255 255 /30%);
+    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
     order: 1;
     width: 200px;
     height: 200px;
-    animation: profile_animate 8s ease-in-out infinite 1s ;
+    animation: profile__animate 8s ease-in-out infinite 1s;
 }
 
-@keyframes profile__animate{
-    0%{
+@keyframes profile__animate {
+    0% {
         border-radius: 60% 40% 30% 70% 60% 30% 70% 40%;
     }
-    50%{
+
+    50% {
         border-radius: 30% 60% 70% 40% 50% 60% 30% 60%;
     }
-    100%{
+
+    100% {
         border-radius: 60% 40% 30% 70% 60% 30% 70% 40%;
     }
-}
-
-.home__download{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 1rem;
-    
-}
-.Download{
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 130px;
-    height: 35px;
-    border: 1px solid black;
-    border-radius:7px ;
 }

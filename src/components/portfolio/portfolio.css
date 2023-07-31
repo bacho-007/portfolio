@@ -1,0 +1,44 @@
+.portfolio__title {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.portfolio__item {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border: 1px solid black;
+    border-radius: 25px;
+    width: auto;
+    height: 400px;
+}
+
+.portfolio__item__title {
+    margin-left: 15px;
+}
+
+.portfolio__img {
+    padding: 15px;
+    width: 320px;
+    height: 300px;
+    border-radius: 25px;
+}
+
+.portfolio__link {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+
+.portfolio__githab {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 15px;
+}
+
+.portfolio__livedemo {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 15px;
+    margin-right: 15px;
+}
