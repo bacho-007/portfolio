@@ -44,9 +44,13 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+textarea,
+input,
+label {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
+  font-family: var(--body-font);
 }
 
 ul {

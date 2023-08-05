@@ -7,15 +7,15 @@
   width: max-content;
   transform: translateX(-50%);
   bottom: 2rem;
-  z-index: 2;
-  display: none;
+  z-index: 1000;
+
 }
 
 .mini__navigation {
   position: relative;
   width: 370px;
   height: 70px;
-  background: #ffff;
+  background: hwb(84 46% 3%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,7 +53,7 @@
   font-size: 1.5em;
   text-align: center;
   transition: 0.5s;
-  color: var(--clr);
+  color: rgb(255, 255, 255);
 }
 
 .mini__navigation ul li.active a .icon {
@@ -62,7 +62,7 @@
 
 .mini__navigation ul li a .text {
   position: absolute;
-  color: var(--clr);
+  color: rgb(255, 255, 255);
   font-weight: 400;
   font-size: 0.75em;
   letter-spacing: 0.05em;

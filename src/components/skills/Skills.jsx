@@ -6,6 +6,8 @@ import js from "../../assets/js.png";
 import react from "../../assets/science.png";
 import sass from "../../assets/sass.png";
 import figma from "../../assets/figma.png";
+import git from "../../assets/git.png";
+import github from "../../assets/github.png";
 
 
 
@@ -52,6 +54,16 @@ function Skills() {
                         <div className="skills__frontend__box__element">
                             <img className='skills__frontend__box__element' src={figma} alt="" />
                             <h3 className="skills__img__title">figma</h3>
+                        </div>
+
+                        <div className="skills__frontend__box__element">
+                            <img className='skills__frontend__box__element' src={git} alt="" />
+                            <h3 className="skills__img__title">git</h3>
+                        </div>
+
+                        <div className="skills__frontend__box__element">
+                            <img className='skills__frontend__box__element' src={github} alt="" />
+                            <h3 className="skills__img__title">github</h3>
                         </div>
 
 

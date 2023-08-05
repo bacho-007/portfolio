@@ -18,7 +18,7 @@ function About() {
 
                     <div className="about__download">
                         <div className='Download'>
-                            <a href="{cv}" download><span className='download__text'>download__cv <i><i class="uil uil-file-download-alt"></i></i></span></a>
+                            <a href="{cv}" download><span className='download__text'>download__cv <i><i className="uil uil-file-download-alt"></i></i></span></a>
                         </div>
                     </div>
                 </div>

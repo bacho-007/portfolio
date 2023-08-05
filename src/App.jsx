@@ -4,6 +4,9 @@ import Social from "./components/home/Social";
 import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 import Portfolio from "./components/portfolio/Portfolio";
+import Contact from "./components/contact/Contact";
+import ContactForm from "./components/contact/ContactForm";
+
 
 
 
@@ -17,6 +20,8 @@ function App() {
       <About />
       <Skills />
       <Portfolio />
+      <Contact />
+      <ContactForm />
     </>
   );
 }
