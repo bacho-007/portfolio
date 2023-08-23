@@ -1,7 +1,7 @@
 import React from 'react';
-
-
 import "./home.css";
+import about from '../../assets/about.jpg';
+
 
 function Home() {
     return (
@@ -13,8 +13,7 @@ function Home() {
                     <h1 className="home__title">bacho davitashvili</h1>
                     <h3 className="home__subtitle">front end developer</h3>
 
-                    <div className="home__img"></div>
-
+                    <div className="home__img" style={{ backgroundImage: `url(${about})` }}></div>
 
                 </div>
             </div>

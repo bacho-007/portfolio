@@ -9,13 +9,15 @@
   bottom: 2rem;
   z-index: 1000;
 
+
 }
 
 .mini__navigation {
   position: relative;
   width: 370px;
   height: 70px;
-  background: hwb(84 46% 3%);
+  background: rgb(107, 201, 201);
+  /* background: hwb(84 46% 3%); */
   display: flex;
   justify-content: center;
   align-items: center;
