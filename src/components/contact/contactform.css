@@ -11,7 +11,12 @@
 }
 
 .contact-form {
-    background-color: #1abc9c;
+    background-color: rgb(5, 14, 14);
+    background: -moz-linear-gradient(90deg, rgba(5, 14, 14, 1) 1%, rgba(65, 124, 120, 1) 51%, rgba(23, 54, 64, 1) 98%);
+    background: -webkit-linear-gradient(90deg, rgba(5, 14, 14, 1) 1%, rgba(65, 124, 120, 1) 51%, rgba(23, 54, 64, 1) 98%);
+    background: linear-gradient(90deg, rgba(5, 14, 14, 1) 1%, rgba(65, 124, 120, 1) 51%, rgba(23, 54, 64, 1) 98%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#050e0e", endColorstr="#173640", GradientType=1);
+    ;
     border-radius: 30px;
 }
 
@@ -113,7 +118,12 @@ textarea.input {
     opacity: 0;
     transition: 0.3s;
     height: 5px;
-    background-color: #1abc9c;
+    background-color: rgb(5, 14, 14);
+    background: -moz-linear-gradient(90deg, rgba(5, 14, 14, 1) 1%, rgba(65, 124, 120, 1) 51%, rgba(23, 54, 64, 1) 98%);
+    background: -webkit-linear-gradient(90deg, rgba(5, 14, 14, 1) 1%, rgba(65, 124, 120, 1) 51%, rgba(23, 54, 64, 1) 98%);
+    background: linear-gradient(90deg, rgba(5, 14, 14, 1) 1%, rgba(65, 124, 120, 1) 51%, rgba(23, 54, 64, 1) 98%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#050e0e", endColorstr="#173640", GradientType=1);
+    ;
     top: 50%;
     transform: translateY(-50%);
 }

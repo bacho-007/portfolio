@@ -3,18 +3,8 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-
 }
 
-.home__social {
-    display: grid;
-    grid-template-columns: max-content;
-    position: absolute;
-    row-gap: 1rem;
-    transform: translatey(-200%);
-    padding-left: 1rem;
-    cursor: pointer;
-}
 
 .home__section {
     padding-top: 6rem;

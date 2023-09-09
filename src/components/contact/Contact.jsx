@@ -1,66 +1,74 @@
 import React from 'react';
-import "./contact.css";
-import gmail from "../../assets/gmail.png";
-import whatsapp from "../../assets/whatsapp.png";
-import messenger from "../../assets/messenger.png";
-import linkedin from "../../assets/linkedin.png";
+import Lottie from 'react-lottie';
+import animationData1 from '../../assets/animation_llxwgag4.json';
+import animationData2 from '../../assets/animation_llxw8gmj.json';
+import animationData3 from '../../assets/animation_llxve6e5.json';
+import animationData4 from '../../assets/animation_llxzmh3e.json';
 
+import './contact.css';
 
-function Contact() {
+function AnimatedComponent() {
+    const topAnimations = [
+        {
+            options: {
+                loop: true,
+                autoplay: true,
+                animationData: animationData1,
+            },
+            link: 'https://www.facebook.com/?_rdc=2&_rdr=',
+        },
+        {
+            options: {
+                loop: true,
+                autoplay: true,
+                animationData: animationData2,
+            },
+            link: '/link2',
+        },
+    ];
+
+    const bottomAnimations = [
+        {
+            options: {
+                loop: true,
+                autoplay: true,
+                animationData: animationData3,
+            },
+            link: '/link3',
+        },
+        {
+            options: {
+                loop: true,
+                autoplay: true,
+                animationData: animationData4,
+            },
+            link: '/link4',
+        },
+    ];
+
     return (
-        <div className="container">
-            <section className="contact" id="section_id">
-
-                <div className="contact__title__box">
-                    <h2 className="section__title">get in touch</h2>
-                    <span className='section__subtitle'>contact Me</span>
-                </div>
-
-                <h3 className="contact__title">talk to me</h3>
-
-                <div className="contact__content">
-                    <div className="contact__info">
-                        <div className="contact__card">
-                            <a href="https://mail.google.com/" target="_blank">
-                                <img className='contact__card__icon' src={gmail} alt="gmail" />
-                            </a>
-
-                            <h3 className="contact__card__title">Email</h3>
-                            <span className="contact__card__data">user@gmail.com</span>
-
-                        </div>
-
-
-                        <div className="contact__card">
-                            <a href="https://web.whatsapp.com/" target="_blank">
-                                <img className='contact__card__icon' src={whatsapp} alt="gmail" />
-                            </a>
-
-                            <h3 className="contact__card__title">whatsapp</h3>
-                            <span className="contact__card__data">551-105-103</span>
-
-                        </div>
-
-                        <div className="contact__card">
-                            <a href="https://www.facebook.com/bacho.davitashvili.94" target="_blank">
-                                <img className='contact__card__icon' src={messenger} alt="gmail" />
-                            </a>
-                            <h3 className="contact__card__title">messenger</h3>
-
-                        </div>
-
-                        <div className="contact__card">
-                            <a href="https://www.facebook.com/bacho.davitashvili.94" target="_blank">
-                                <img className='contact__card__icon' src={linkedin} alt="gmail" />
-                            </a>
-                            <h3 className="contact__card__title">linkedin</h3>
-
-                        </div>
+        <div className='social__animacion__container'>
+            <div className='top-animations'>
+                {topAnimations.map((animation, index) => (
+                    <div key={index} className='animation-container'>
+                        <a href={animation.link} target="_blank" rel="noopener noreferrer" className="animation-link">
+                            <Lottie options={animation.options} />
+                        </a>
                     </div>
-                </div>
-            </section>
+                ))}
+            </div>
+            <div className='bottom-animations'>
+                {bottomAnimations.map((animation, index) => (
+                    <div key={index} className='animation-container'>
+                        <a href={animation.link} target="_blank" rel="noopener noreferrer" className="animation-link">
+                            <Lottie options={animation.options} />
+                        </a>
+                    </div>
+                ))}
+            </div>
         </div>
-    )
+    );
 }
 
-export default Contact
+export default AnimatedComponent;
+

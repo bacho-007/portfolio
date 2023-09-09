@@ -6,7 +6,7 @@ import Skills from "./components/skills/Skills";
 import Portfolio from "./components/portfolio/Portfolio";
 import Contact from "./components/contact/Contact";
 import ContactForm from "./components/contact/ContactForm";
-import Footer from "./components/Footer/Footer";
+
 
 
 
@@ -23,7 +23,7 @@ function App() {
       <Portfolio />
       <Contact />
       <ContactForm />
-      <Footer />
+
     </>
   );
 }

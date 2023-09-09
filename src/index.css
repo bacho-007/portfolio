@@ -39,7 +39,12 @@ a {
 }
 
 body {
-  background-color: rgb(149, 228, 242);
+  background: rgb(13, 37, 37);
+  background: -moz-linear-gradient(90deg, rgba(13, 37, 37, 1) 1%, rgba(93, 255, 246, 1) 51%, rgba(15, 47, 70, 1) 98%);
+  background: -webkit-linear-gradient(90deg, rgba(13, 37, 37, 1) 1%, rgba(93, 255, 246, 1) 51%, rgba(15, 47, 70, 1) 98%);
+  background: linear-gradient(90deg, rgba(13, 37, 37, 1) 1%, rgba(93, 255, 246, 1) 51%, rgba(15, 47, 70, 1) 98%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d2525", endColorstr="#0f2f46", GradientType=1);
+
 }
 
 h1,
